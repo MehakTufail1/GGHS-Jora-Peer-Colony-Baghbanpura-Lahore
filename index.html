@@ -10,250 +10,601 @@
 
     <title>GGHS Jora Peer Colony Baghbanpura Lahore</title>
 
-    <style>
-
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #f4f8fb;
-            color: #333;
-        }
-
-        header {
-            background-color: #1769aa;
-            color: white;
-            text-align: center;
-            padding: 30px 15px;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 28px;
-        }
-
-        header p {
-            font-size: 17px;
-        }
-
-        nav {
-            background-color: #123b5d;
-            text-align: center;
-            padding: 15px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 10px;
-            font-weight: bold;
-        }
-
-        section {
-            background-color: white;
-            margin: 20px auto;
-            padding: 20px;
-            max-width: 900px;
-            border-radius: 10px;
-        }
-
-        h2 {
-            color: #1769aa;
-        }
-
-        p {
-            line-height: 1.6;
-        }
-
-        li {
-            margin: 8px;
-        }
-
-        button {
-            background-color: #1769aa;
-            color: white;
-            border: none;
-            padding: 12px 20px;
-            border-radius: 6px;
-            font-size: 16px;
-        }
-
-        footer {
-            background-color: #123b5d;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-
-    </style>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
-<header>
+    <!-- ================= HEADER ================= -->
 
-    <h1>Government Girls High School</h1>
+    <header>
 
-    <p>
-        Jora Peer Colony, Baghbanpura, Lahore
-    </p>
+        <div class="school-logo">
+            GGHS
+        </div>
 
-    <p>
-        EMIS Code: 35210166
-    </p>
+        <h1>
+            Government Girls High School
+        </h1>
 
-</header>
+        <h2>
+            Jora Peer Colony, Baghbanpura, Lahore
+        </h2>
 
+        <p>
+            Official School Website
+        </p>
 
-<nav>
+    </header>
 
-    <a href="#about">About</a>
 
-    <a href="#subjects">Subjects</a>
+    <!-- ================= NAVIGATION ================= -->
 
-    <a href="#facilities">Facilities</a>
+    <nav>
 
-    <a href="#contact">Contact</a>
+        <div class="nav-container">
 
-</nav>
+            <div class="nav-logo">
+                GGHS
+            </div>
 
+            <button
+                class="menu-button"
+                onclick="toggleMenu()">
 
-<section id="about">
+                ☰
 
-    <h2>Welcome to Our School</h2>
+            </button>
 
-    <p>
-        Welcome to the official website of
-        Government Girls High School,
-        Jora Peer Colony, Baghbanpura, Lahore.
-    </p>
+            <ul class="nav-links" id="navLinks">
 
-    <p>
-        Our school provides students with
-        opportunities to learn, develop skills,
-        explore creativity and build good character.
-    </p>
+                <li>
+                    <a href="#home">Home</a>
+                </li>
 
-</section>
+                <li>
+                    <a href="#about">About</a>
+                </li>
 
+                <li>
+                    <a href="#academics">Academics</a>
+                </li>
 
-<section id="subjects">
+                <li>
+                    <a href="#staff">Staff</a>
+                </li>
 
-    <h2>Our Subjects</h2>
+                <li>
+                    <a href="#notices">Notices</a>
+                </li>
 
-    <ul>
+                <li>
+                    <a href="#activities">Activities</a>
+                </li>
 
-        <li>English</li>
+                <li>
+                    <a href="#gallery">Gallery</a>
+                </li>
 
-        <li>Urdu</li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
 
-        <li>Mathematics</li>
+            </ul>
 
-        <li>Science</li>
+        </div>
 
-        <li>Computer Science</li>
+    </nav>
 
-        <li>Pakistan Studies</li>
 
-    </ul>
+    <!-- ================= HOME ================= -->
 
-</section>
+    <section id="home" class="hero">
 
+        <div class="hero-content">
 
-<section id="facilities">
+            <h1>
+                Welcome to Our School
+            </h1>
 
-    <h2>School Facilities</h2>
+            <p>
+                Learning • Character • Creativity • Excellence
+            </p>
 
-    <ul>
+            <a
+                href="#about"
+                class="hero-button">
 
-        <li>Computer Facilities</li>
+                Explore Our School
 
-        <li>Science Learning</li>
+            </a>
 
-        <li>Library Resources</li>
+        </div>
 
-        <li>Sports Activities</li>
+    </section>
 
-        <li>Co-curricular Activities</li>
 
-    </ul>
+    <!-- ================= ABOUT ================= -->
 
-</section>
+    <section id="about">
 
+        <h2 class="section-title">
+            About Our School
+        </h2>
 
-<section>
+        <p class="section-intro">
 
-    <h2>School Timings</h2>
+            Government Girls High School,
+            Jora Peer Colony, Baghbanpura, Lahore,
+            is committed to providing students with
+            quality education, digital skills,
+            creativity and opportunities for
+            personal development.
 
-    <p>
-        Monday to Friday
-    </p>
+        </p>
 
-    <p>
-        8:00 AM – 1:45 PM
-    </p>
 
-</section>
+        <div class="cards">
 
+            <div class="card">
 
-<section>
+                <div class="card-icon">
+                    🎓
+                </div>
 
-    <h2>Welcome Message</h2>
+                <h3>
+                    Quality Education
+                </h3>
 
-    <p>
-        We are committed to creating a positive
-        learning environment for our students.
-    </p>
+                <p>
+                    Supporting students in their
+                    academic development.
+                </p>
 
-    <button onclick="welcomeMessage()">
-        Click Here
-    </button>
+            </div>
 
-    <p id="message"></p>
 
-</section>
+            <div class="card">
 
+                <div class="card-icon">
+                    💻
+                </div>
 
-<section id="contact">
+                <h3>
+                    Digital Learning
+                </h3>
 
-    <h2>Contact Us</h2>
+                <p>
+                    Encouraging students to develop
+                    modern digital skills.
+                </p>
 
-    <p>
-        Government Girls High School
-    </p>
+            </div>
 
-    <p>
-        Jora Peer Colony, Baghbanpura, Lahore
-    </p>
 
-    <p>
-        EMIS Code: 35210166
-    </p>
+            <div class="card">
 
-</section>
+                <div class="card-icon">
+                    🌱
+                </div>
 
+                <h3>
+                    Character Building
+                </h3>
 
-<footer>
+                <p>
+                    Promoting responsibility,
+                    discipline and positive values.
+                </p>
 
-    <p>
-        GGHS Jora Peer Colony
-        Baghbanpura Lahore
-    </p>
+            </div>
 
-</footer>
+        </div>
 
+    </section>
 
-<script>
 
-function welcomeMessage() {
+    <!-- ================= ACADEMICS ================= -->
 
-    document.getElementById("message").innerHTML =
-    "Welcome to GGHS Jora Peer Colony! Keep learning and keep growing.";
+    <section id="academics">
 
-}
+        <h2 class="section-title">
+            Academics
+        </h2>
 
-</script>
+        <p class="section-intro">
+            Our students study a range of subjects
+            designed to develop knowledge and skills.
+        </p>
 
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="card-icon">📖</div>
+                <h3>English</h3>
+                <p>Language and communication skills.</p>
+            </div>
+
+
+            <div class="card">
+                <div class="card-icon">اردو</div>
+                <h3>Urdu</h3>
+                <p>Language, literature and communication.</p>
+            </div>
+
+
+            <div class="card">
+                <div class="card-icon">🔢</div>
+                <h3>Mathematics</h3>
+                <p>Logical thinking and problem solving.</p>
+            </div>
+
+
+            <div class="card">
+                <div class="card-icon">🔬</div>
+                <h3>Science</h3>
+                <p>Scientific knowledge and exploration.</p>
+            </div>
+
+
+            <div class="card">
+                <div class="card-icon">💻</div>
+                <h3>Computer Science</h3>
+                <p>Computing, programming and digital skills.</p>
+            </div>
+
+
+            <div class="card">
+                <div class="card-icon">🇵🇰</div>
+                <h3>Pakistan Studies</h3>
+                <p>History, geography and civic awareness.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= STAFF ================= -->
+
+    <section id="staff">
+
+        <h2 class="section-title">
+            Our Staff
+        </h2>
+
+        <p class="section-intro">
+            Our dedicated teachers support students
+            in their academic and personal development.
+        </p>
+
+
+        <div class="cards">
+
+            <div class="staff-card">
+
+                <div class="staff-photo">
+                    👩‍🏫
+                </div>
+
+                <h3>
+                    School Administration
+                </h3>
+
+                <p>
+                    School Leadership
+                </p>
+
+            </div>
+
+
+            <div class="staff-card">
+
+                <div class="staff-photo">
+                    👩‍🏫
+                </div>
+
+                <h3>
+                    Teaching Staff
+                </h3>
+
+                <p>
+                    Dedicated Teachers
+                </p>
+
+            </div>
+
+
+            <div class="staff-card">
+
+                <div class="staff-photo">
+                    💻
+                </div>
+
+                <h3>
+                    Computer Science
+                </h3>
+
+                <p>
+                    Computer Science Department
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= NOTICES ================= -->
+
+    <section id="notices">
+
+        <h2 class="section-title">
+            School Notices
+        </h2>
+
+
+        <div class="notice-board">
+
+            <div class="notice-date">
+                Latest Notice
+            </div>
+
+            <h3>
+                Welcome to the New Academic Session
+            </h3>
+
+            <p>
+                Students are encouraged to attend
+                school regularly and participate
+                actively in classroom learning.
+            </p>
+
+        </div>
+
+
+        <div class="notice-board">
+
+            <div class="notice-date">
+                Important
+            </div>
+
+            <h3>
+                Monthly Assessment
+            </h3>
+
+            <p>
+                Students should prepare for their
+                scheduled monthly assessments.
+            </p>
+
+        </div>
+
+
+        <div class="notice-board">
+
+            <div class="notice-date">
+                School Activities
+            </div>
+
+            <h3>
+                Co-curricular Activities
+            </h3>
+
+            <p>
+                Students are encouraged to participate
+                in educational and co-curricular activities.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ACTIVITIES ================= -->
+
+    <section id="activities">
+
+        <h2 class="section-title">
+            Activities & Achievements
+        </h2>
+
+
+        <div class="cards">
+
+            <div class="card">
+
+                <div class="card-icon">
+                    🏆
+                </div>
+
+                <h3>
+                    Academic Activities
+                </h3>
+
+                <p>
+                    Learning activities, assessments
+                    and classroom projects.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="card-icon">
+                    🎨
+                </div>
+
+                <h3>
+                    Creative Activities
+                </h3>
+
+                <p>
+                    Art, presentations, charts and
+                    creative student work.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="card-icon">
+                    ⚽
+                </div>
+
+                <h3>
+                    Sports
+                </h3>
+
+                <p>
+                    Encouraging students to participate
+                    in sports and physical activities.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="card-icon">
+                    🇵🇰
+                </div>
+
+                <h3>
+                    National Events
+                </h3>
+
+                <p>
+                    Students participate in national
+                    and educational events.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= GALLERY ================= -->
+
+    <section id="gallery">
+
+        <h2 class="section-title">
+            School Gallery
+        </h2>
+
+        <p class="section-intro">
+            School activities and events will be
+            added to our gallery.
+        </p>
+
+
+        <div class="gallery">
+
+            <div class="gallery-item">
+                📷<br>
+                School Building
+            </div>
+
+            <div class="gallery-item">
+                📷<br>
+                Classroom Activities
+            </div>
+
+            <div class="gallery-item">
+                📷<br>
+                Science Activities
+            </div>
+
+            <div class="gallery-item">
+                📷<br>
+                Computer Activities
+            </div>
+
+            <div class="gallery-item">
+                📷<br>
+                Sports Activities
+            </div>
+
+            <div class="gallery-item">
+                📷<br>
+                School Events
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact">
+
+        <h2 class="section-title">
+            Contact Us
+        </h2>
+
+
+        <div class="contact-box">
+
+            <h2>
+                Government Girls High School
+            </h2>
+
+            <p>
+                Jora Peer Colony,
+                Baghbanpura, Lahore
+            </p>
+
+            <p>
+                📍 Lahore, Punjab, Pakistan
+            </p>
+
+            <p>
+                EMIS Code:
+                <strong>
+                    Add Official EMIS Code
+                </strong>
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <h3>
+            GGHS Jora Peer Colony
+        </h3>
+
+        <p>
+            Jora Peer Colony, Baghbanpura, Lahore
+        </p>
+
+        <p>
+            Government Girls High School
+        </p>
+
+        <p>
+            Official School Website
+        </p>
+
+    </footer>
+
+
+    <!-- Link JavaScript -->
+
+    <script src="script.js"></script>
 
 </body>
 
