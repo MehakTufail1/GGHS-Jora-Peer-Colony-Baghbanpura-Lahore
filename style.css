@@ -1,10 +1,11 @@
-/* ==============================*/
-/* =========================================
-   GLOBAL RESET
-   ========================================= */
+/* =========================
+   GENERAL
+========================= */
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html {
@@ -12,321 +13,202 @@ html {
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
     background: #f4f7fb;
-    color: #1f2937;
+    color: #333;
+    line-height: 1.6;
 }
 
 
-/* =========================================
-   SCHOOL HEADER
-   ========================================= */
+/* =========================
+   HEADER
+========================= */
 
-.header {
-    width: 100%;
-    background: linear-gradient(135deg, #075985, #0f766e);
+header {
+    background: linear-gradient(
+        135deg,
+        #075985,
+        #0f766e
+    );
+
     color: white;
-    padding: 28px 20px;
+
+    padding: 25px 15px;
+
     text-align: center;
 }
 
-.logo-area {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
 .school-logo {
-    width: 105px;
-    height: 105px;
-    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+
     background: white;
     color: #075985;
+
+    border-radius: 50%;
+
+    margin: auto;
+
     display: flex;
+
     align-items: center;
     justify-content: center;
-    font-size: 34px;
+
+    font-size: 38px;
     font-weight: bold;
-    margin-bottom: 15px;
-    border: 4px solid rgba(255,255,255,0.8);
 }
 
-.logo-area h1 {
-    margin: 0;
-    font-size: 32px;
-    line-height: 1.2;
+header h1 {
+    margin-top: 15px;
+    font-size: 28px;
 }
 
-.logo-area p {
-    margin: 10px 0 0;
+header h2 {
+    font-size: 19px;
+    font-weight: normal;
+    margin-top: 5px;
+}
+
+header p {
+    margin-top: 8px;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+    background: #083344;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 10px 15px;
+}
+
+.nav-logo {
+    color: white;
+
+    font-weight: bold;
+
     font-size: 18px;
 }
 
+.menu-button {
+    display: none;
 
-/* =========================================
-   MAIN SCHOOL BANNER
-   ========================================= */
+    background: none;
 
-.school-banner {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    background: white;
-    overflow: hidden;
-    line-height: 0;
-}
+    border: none;
 
-.school-banner a {
-    display: block;
-    width: 100%;
-}
+    color: white;
 
-.banner-image {
-    display: block;
-    width: 100%;
-    max-width: none;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    object-fit: contain;
+    font-size: 28px;
+
     cursor: pointer;
-}
-
-
-/* =========================================
-   NAVIGATION BAR
-   ========================================= */
-
-.navbar {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-
-    width: 100%;
-
-    background: #063b4c;
-
-    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
 }
 
 .nav-links {
     display: flex;
-    justify-content: center;
-    align-items: center;
 
-    width: 100%;
+    list-style: none;
+
+    gap: 5px;
 }
 
 .nav-links a {
     color: white;
+
     text-decoration: none;
 
-    padding: 18px 20px;
+    padding: 10px 12px;
 
-    font-size: 16px;
-    font-weight: 600;
+    display: block;
 
-    transition: all 0.3s ease;
+    border-radius: 5px;
 }
 
 .nav-links a:hover {
     background: #0f766e;
-    color: white;
 }
 
 
-/* =========================================
-   MOBILE MENU BUTTON
-   ========================================= */
+/* =========================
+   HERO
+========================= */
 
-.menu-toggle {
-    display: none;
+.hero {
 
-    width: 100%;
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.45)
+        );
 
-    background: #063b4c;
-    color: white;
+    min-height: 420px;
 
-    border: none;
+    display: flex;
 
-    padding: 15px;
+    align-items: center;
 
-    font-size: 25px;
-
-    cursor: pointer;
-}
-
-
-/* =========================================
-   GENERAL SECTIONS
-   ========================================= */
-
-section:not(.school-banner) {
-    padding: 60px 20px;
-}
-
-section h2 {
-    text-align: center;
-    color: #075985;
-    font-size: 32px;
-    margin-bottom: 30px;
-}
-
-
-/* =========================================
-   CARDS
-   ========================================= */
-
-.cards,
-.card-container {
-    max-width: 1100px;
-    margin: auto;
-
-    display: grid;
-
-    grid-template-columns: repeat(
-        auto-fit,
-        minmax(240px, 1fr)
-    );
-
-    gap: 25px;
-}
-
-.card {
-    background: white;
-
-    padding: 25px;
-
-    border-radius: 12px;
-
-    box-shadow:
-        0 5px 20px rgba(0,0,0,0.08);
-
-    transition: transform 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
-
-/* =========================================
-   FOOTER
-   ========================================= */
-
-footer {
-    background: #063b4c;
-    color: white;
+    justify-content: center;
 
     text-align: center;
 
-    padding: 25px 20px;
+    color: white;
 
-    margin-top: 30px;
+    padding: 40px 20px;
+}
+
+.hero-content {
+    max-width: 850px;
+}
+
+.hero h1 {
+    font-size: 42px;
+
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+.hero-button {
+    display: inline-block;
+
+    margin-top: 25px;
+
+    padding: 13px 25px;
+
+    background: #0f766e;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 7px;
+
+    font-weight: bold;
 }
 
 
-/* =========================================
-   MOBILE RESPONSIVE DESIGN
-   ========================================= */
-
-@media (max-width: 768px) {
-
-    .header {
-        padding: 20px 15px;
-    }
-
-    .school-logo {
-        width: 80px;
-        height: 80px;
-        font-size: 26px;
-        margin-bottom: 10px;
-    }
-
-    .logo-area h1 {
-        font-size: 24px;
-    }
-
-    .logo-area p {
-        font-size: 15px;
-    }
-
-
-    /* Banner */
-
-    .school-banner {
-        width: 100%;
-        overflow: hidden;
-    }
-
-    .banner-image {
-        width: 100%;
-        height: auto;
-    }
-
-
-    /* Mobile navigation */
-
-    .menu-toggle {
-        display: block;
-    }
-
-    .nav-links {
-        display: none;
-
-        flex-direction: column;
-
-        width: 100%;
-
-        background: #063b4c;
-    }
-
-    .nav-links.show {
-        display: flex;
-    }
-
-    .nav-links a {
-        width: 100%;
-        text-align: center;
-
-        padding: 14px;
-        border-top: 1px solid rgba(255,255,255,0.1);
-    }
-
-
-    section:not(.school-banner) {
-        padding: 40px 15px;
-    }
-
-    section h2 {
-        font-size: 26px;
-    }
-}
-
-
-/* =========================================
-   VERY SMALL MOBILE SCREENS
-   ========================================= */
-
-@media (max-width: 480px) {
-
-    .logo-area h1 {
-        font-size: 21px;
-    }
-
-    .logo-area p {
-        font-size: 14px;
-    }
-
-    .school-logo {
-        width: 70px;
-        height: 70px;
-        font-size: 23px;
-    }
-}
 /* =========================
    SECTIONS
 ========================= */
