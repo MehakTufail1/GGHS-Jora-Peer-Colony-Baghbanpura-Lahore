@@ -72,10 +72,9 @@ body {
 
 .school-banner {
     width: 100%;
-    max-width: 100%;
     margin: 0;
     padding: 0;
-    background: #ffffff;
+    background: white;
     overflow: hidden;
     line-height: 0;
 }
@@ -83,31 +82,17 @@ body {
 .school-banner a {
     display: block;
     width: 100%;
-    margin: 0;
-    padding: 0;
 }
 
 .banner-image {
     display: block;
-
     width: 100%;
     max-width: none;
-
     height: auto;
-
     margin: 0;
     padding: 0;
-
-    object-fit: cover;
-
+    object-fit: contain;
     cursor: pointer;
-
-    transition: transform 0.3s ease,
-                opacity 0.3s ease;
-}
-
-.banner-image:hover {
-    opacity: 0.96;
 }
 
 
