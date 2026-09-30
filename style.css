@@ -2,7 +2,7 @@
    SCHOOL WEBSITE MAIN BANNER
    ============================== */
 
-.school-banner {
+.school-banner.png {
     width: 100%;
     margin: 0;
     padding: 0;
@@ -11,7 +11,7 @@
     line-height: 0;
 }
 
-.school-banner a {
+.school-banner.png a {
     display: block;
     width: 100%;
     text-decoration: none;
